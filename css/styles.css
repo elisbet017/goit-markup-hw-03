@@ -3,7 +3,6 @@ body {
   color: var(--dark-color);
   background: var(--light-light-color);
   font-size: 16px;
-  margin: 0;
 }
 
 *,
@@ -55,7 +54,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -89,6 +87,11 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.section {
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .container {
@@ -160,9 +163,8 @@ img {
 /* #E7E9FC - header line */
 
 .hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding: 188px 0;
+  text-align: center;
 }
 
 .hero-title {
@@ -183,6 +185,7 @@ img {
 /* BUTTONS */
 
 .hero-btn {
+  border: none;
   width: 169px;
   height: 56px;
 
@@ -238,6 +241,7 @@ img {
 
 .our-features {
   padding-top: 120px;
+  padding-bottom: 0;
 }
 
 .our-features-list {
@@ -255,8 +259,6 @@ img {
 .offers {
   padding-top: 120px;
   padding-bottom: 120px;
-  display: flex;
-  justify-content: center;
 }
 
 .offers-list {
@@ -278,13 +280,13 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
   background: var(--light-color);
-  border: 1px solid var(--accent-color);
 }
 
 .our-team-item {
   background: var(--light-light-color);
   border-radius: 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-list {
@@ -307,15 +309,12 @@ img {
 }
 
 .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 32px 16px;
 }
 
 .section-title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 
   font-size: 36px;
   line-height: 1.11;
